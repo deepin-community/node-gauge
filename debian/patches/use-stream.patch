@@ -1,0 +1,11 @@
+--- a/test/index.js
++++ b/test/index.js
+@@ -1,7 +1,7 @@
+ 'use strict'
+ var test = require('tap').test
+ var Gauge = require('../index')
+-var stream = require('readable-stream')
++var stream = require('stream')
+ var util = require('util')
+ var EventEmitter = require('events').EventEmitter
+ 

@@ -1,3 +1,57 @@
+# Changelog
+
+### [4.0.4](https://github.com/npm/gauge/compare/v4.0.3...v4.0.4) (2022-03-28)
+
+
+### Bug Fixes
+
+* fix always true condition ([#160](https://github.com/npm/gauge/issues/160)) ([bebaf0b](https://github.com/npm/gauge/commit/bebaf0b0655f0bdc58a6548b04230cd420245e5e))
+
+### v4.0.0
+
+* BREAKING CHANGE: Drops support for Node v10 and non-LTS versions of v12 and v14
+* feat: install template-oss
+* fix: repository metadata
+* fix: Typo in package.json
+* fix: Remove remaining uses of object-assign
+* fix: remove object-assign
+
+### [4.0.3](https://www.github.com/npm/gauge/compare/v4.0.2...v4.0.3) (2022-03-10)
+
+
+### Bug Fixes
+
+* move demo.js to the docs folder ([#155](https://www.github.com/npm/gauge/issues/155)) ([1faf8cf](https://www.github.com/npm/gauge/commit/1faf8cf25c0bffb345f6657e20743d83c54d6695))
+
+
+### Dependencies
+
+* remove the unused direct ansi-regex dependency ([#156](https://www.github.com/npm/gauge/issues/156)) ([65be798](https://www.github.com/npm/gauge/commit/65be79895801433e02aef58cafb6f31a87287e59))
+
+### [4.0.2](https://www.github.com/npm/gauge/compare/v4.0.1...v4.0.2) (2022-02-16)
+
+
+### Dependencies
+
+* update color-support requirement from ^1.1.2 to ^1.1.3 ([5921a0f](https://www.github.com/npm/gauge/commit/5921a0f89e6c4c10ea047a219230809fd4118409))
+* update console-control-strings requirement from ^1.0.0 to ^1.1.0 ([a5ac787](https://www.github.com/npm/gauge/commit/a5ac787a3771e8882f9837fab08ca2985cad609f))
+* update signal-exit requirement from ^3.0.0 to ^3.0.7 ([3e0d399](https://www.github.com/npm/gauge/commit/3e0d39917b10e0f94efd4a4c74a46fa8e21e768a))
+* update wide-align requirement from ^1.1.2 to ^1.1.5 ([ddc9048](https://www.github.com/npm/gauge/commit/ddc90480a6c1caa8c176e0b65a9d8207be846f94))
+
+### [4.0.1](https://www.github.com/npm/gauge/compare/v4.0.0...v4.0.1) (2022-02-15)
+
+
+### Bug Fixes
+
+* use more commonly available character for pre/post progressbar ([#141](https://www.github.com/npm/gauge/issues/141)) ([13d3046](https://www.github.com/npm/gauge/commit/13d30466b56015cb75df366371cf85234a8a517f))
+
+### v3.0.1
+
+* deps: object-assign@4.1.1
+
+### v3.0.0
+* BREAKING CHANGE: Drops support for Node v4, v6, v7 and v8
+
 ### v2.7.4
 
 * Reset colors prior to ending a line, to eliminate flicker when a line

@@ -1,0 +1,26 @@
+Description: fix for signal-exit >= 4
+Author: Yadd <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2023-08-17
+
+--- a/docs/demo.js
++++ b/docs/demo.js
+@@ -1,6 +1,6 @@
+ var Gauge = require('..')
+ var gaugeDefault = require('../lib/themes.js')
+-var onExit = require('signal-exit')
++var { onExit } = require('signal-exit')
+ 
+ var activeGauge
+ 
+--- a/lib/index.js
++++ b/lib/index.js
+@@ -2,7 +2,7 @@
+ var Plumbing = require('./plumbing.js')
+ var hasUnicode = require('has-unicode')
+ var hasColor = require('./has-color.js')
+-var onExit = require('signal-exit')
++var { onExit } = require('signal-exit')
+ var defaultThemes = require('./themes')
+ var setInterval = require('./set-interval.js')
+ var process = require('./process.js')

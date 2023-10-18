@@ -1,5 +1,5 @@
-var Gauge = require('./')
-var gaugeDefault = require('./themes.js')
+var Gauge = require('..')
+var gaugeDefault = require('../lib/themes.js')
 var onExit = require('signal-exit')
 
 var activeGauge
@@ -19,7 +19,7 @@ function nextBar () {
   var gt = new Gauge(process.stderr, {
     updateInterval: 50,
     theme: themeName,
-    cleanupOnExit: false
+    cleanupOnExit: false,
   })
   activeGauge = gt
 
@@ -36,7 +36,9 @@ function nextBar () {
       clearInterval(prog)
       clearInterval(pulse)
       gt.disable()
-      if (themes.length) nextBar()
+      if (themes.length) {
+        nextBar()
+      }
     }
   }, 100)
   gt.show()

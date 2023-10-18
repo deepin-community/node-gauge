@@ -1,0 +1,1 @@
+tap --no-cov `ls test/*.js|grep -v test/base-theme|grep -v test/plumbing`

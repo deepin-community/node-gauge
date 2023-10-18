@@ -1,30 +1,40 @@
 Source: node-gauge
-Section: web
+Section: javascript
 Priority: optional
 Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
 Uploaders: Pirate Praveen <praveen@debian.org>
-Build-Depends:
- debhelper (>= 9)
- , dh-buildinfo
- , nodejs
-Standards-Version: 3.9.8
-Homepage: https://github.com/iarna/gauge
-Vcs-Git: https://anonscm.debian.org/git/pkg-javascript/node-gauge.git
-Vcs-Browser: https://anonscm.debian.org/cgit/pkg-javascript/node-gauge.git
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , node-ansi-regex <!nocheck>
+ , node-aproba <!nocheck>
+ , node-console-control-strings <!nocheck>
+ , node-color-support <!nocheck>
+ , node-has-unicode <!nocheck>
+ , node-readable-stream <!nocheck>
+ , node-signal-exit (>= 4) <!nocheck>
+ , node-string-width <!nocheck>
+ , node-strip-ansi <!nocheck>
+ , node-tap <!nocheck>
+ , node-wide-align <!nocheck>
+Standards-Version: 4.6.2
+Vcs-Browser: https://salsa.debian.org/js-team/node-gauge
+Vcs-Git: https://salsa.debian.org/js-team/node-gauge.git
+Homepage: https://github.com/npm/gauge
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
 
 Package: node-gauge
 Architecture: all
-Depends:
- ${misc:Depends}
- , nodejs
- , node-string-width (>= 1.0.1)
- , node-console-control-strings (>= 1.0.0)
- , node-object-assign (>= 4.1.0)
- , node-strip-ansi (>= 3.0.1)
- , node-has-unicode (>= 2.0.0)
- , node-aproba (>= 1.0.3)
- , node-wide-align (>= 1.1.0)
- , node-signal-exit (>= 3.0.0)
+Depends: ${misc:Depends}
+ , node-ansi-regex
+ , node-aproba
+ , node-console-control-strings
+ , node-color-support
+ , node-has-unicode
+ , node-signal-exit (>= 4)
+ , node-string-width
+ , node-strip-ansi
+ , node-wide-align
 Description: terminal based horizontal progress bar
  A nearly stateless terminal based horizontal gauge / progress bar.  This
  library is a dependency for npmlog, a logger with custom levels and colored

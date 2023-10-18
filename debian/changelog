@@ -1,9 +1,72 @@
-node-gauge (2.7.4-1.1) unstable; urgency=medium
+node-gauge (4.0.4-2) unstable; urgency=medium
 
-  * Non maintainer upload by the Reproducible Builds team.
-  * No source change upload to rebuild on buildd with .buildinfo files.
+  * Team upload
+  * Update standards version to 4.6.2, no changes needed.
+  * Add patch for node-signal-exit >= 4
 
- -- Holger Levsen <holger@debian.org>  Mon, 28 Dec 2020 00:37:00 +0100
+ -- Yadd <yadd@debian.org>  Fri, 18 Aug 2023 07:31:27 +0400
+
+node-gauge (4.0.4-1) unstable; urgency=medium
+
+  * Team upload
+  * Declare compliance with policy 4.6.1
+  * New upstream version 4.0.4
+
+ -- Yadd <yadd@debian.org>  Thu, 19 May 2022 10:54:59 +0200
+
+node-gauge (4.0.3-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 4.0.3
+  * Fix test for tap >= 15 (--no-cov)
+
+ -- Yadd <yadd@debian.org>  Sat, 12 Mar 2022 09:32:46 +0100
+
+node-gauge (4.0.2-1) unstable; urgency=medium
+
+  * Team upload
+  * Set upstream metadata fields: Security-Contact.
+  * New upstream version 4.0.2
+
+ -- Yadd <yadd@debian.org>  Thu, 24 Feb 2022 08:55:31 +0100
+
+node-gauge (4.0.0-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Use secure copyright file specification URI.
+  * Bump debhelper from old 9 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update Vcs-* headers from URL redirect.
+  * Use canonical URL in Vcs-Git.
+  * Remove constraints unnecessary since buster:
+    + node-gauge: Drop versioned constraint on node-aproba,
+      node-console-control-strings, node-has-unicode, node-object-assign,
+      node-signal-exit, node-string-width, node-strip-ansi and node-wide-align
+      in Depends.
+
+  [ Yadd ]
+  * Bump debhelper from old 12 to 13.
+  * Declare compliance with policy 4.6.0
+  * Add "Rules-Requires-Root: no"
+  * Change section to javascript
+  * Add debian/gbp.conf
+  * Modernize debian/watch
+  * Fix filenamemangle
+  * Fix GitHub tags regex
+  * Drop dependency to nodejs
+  * Use dh-sequence-nodejs auto install
+  * Update upstream source to https://github/npm/gauge
+  * New upstream version 4.0.0
+  * Update dependencies
+  * Drop patch
+  * Enable upstream test (tap)
+
+ -- Yadd <yadd@debian.org>  Sat, 20 Nov 2021 08:58:22 +0100
 
 node-gauge (2.7.4-1) unstable; urgency=low
 
